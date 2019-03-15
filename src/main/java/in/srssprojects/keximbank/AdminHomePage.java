@@ -45,8 +45,9 @@ public class AdminHomePage {
 	}
 
 	// click on logout button
-	public void clickLogout() {
+	public BankHomePage clickLogout() {
 		this.logout.click();
+		return PageFactory.initElements(driver, BankHomePage.class);
 	}
 
 	// click on branches button
