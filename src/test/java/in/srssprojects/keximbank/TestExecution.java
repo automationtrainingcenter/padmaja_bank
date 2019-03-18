@@ -2,6 +2,7 @@ package in.srssprojects.keximbank;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import utilities.BrowserHelper;
@@ -27,6 +28,8 @@ public class TestExecution extends BrowserHelper {
 		bankHomePage.fillPassword("Admin");
 		bankHomePage.clickLoginButton();
 		adminHomePage = PageFactory.initElements(driver, AdminHomePage.class);
+		Assert.assertTrue(adminHomePage.isUrlCotainsExpectedText());
+		
 	}
 
 	@Test(priority = 2)

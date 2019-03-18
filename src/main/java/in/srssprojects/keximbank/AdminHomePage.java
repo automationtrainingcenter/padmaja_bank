@@ -68,5 +68,9 @@ public class AdminHomePage {
 		return PageFactory.initElements(driver, EmployeeDetailsPage.class);
 	}
 
+	//verify admin home page is displayed
+	public boolean isUrlCotainsExpectedText() {
+		return driver.getCurrentUrl().contains("adminflow");
+	}
 	
 }
