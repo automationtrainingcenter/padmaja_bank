@@ -50,8 +50,9 @@ public class AdminHomePage {
 	}
 
 	// click on branches button
-	public void clickBranches() {
+	public BranchDetailsPage clickBranch() {
 		this.branches.click();
+		return PageFactory.initElements(driver, BranchDetailsPage.class);
 	}
 
 	// click on roles button
@@ -61,8 +62,9 @@ public class AdminHomePage {
 	}
 
 	// click on employee button
-	public void clickEmployee() {
+	public EmployeeDetailsPage clickEmployee() {
 		this.employee.click();
+		return PageFactory.initElements(driver, EmployeeDetailsPage.class);
 	}
 
 }

@@ -12,6 +12,10 @@ public class TestExecution extends BrowserHelper {
 	AdminHomePage adminHomePage;
 	RoleDetailsPage roleDetailsPage;
 	RoleCreationPage roleCreationPage;
+	BranchDetailsPage branchDetailsPage;
+	BranchCreationPage branchCreationPage;
+	EmployeeDetailsPage employeeDetailsPage;
+	EmployeeCreationPage employeeCreationPage;
 
 	Alert alert;
 
@@ -75,7 +79,7 @@ public class TestExecution extends BrowserHelper {
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
 		roleCreationPage.clickCancel();
 	}
-
+		
 	@Test(priority = 19)
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);
