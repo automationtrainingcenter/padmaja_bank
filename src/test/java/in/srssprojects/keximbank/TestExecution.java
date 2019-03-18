@@ -3,6 +3,8 @@ package in.srssprojects.keximbank;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import utilities.BrowserHelper;
@@ -18,20 +20,20 @@ public class TestExecution extends BrowserHelper {
 
 	Alert alert;
 
-	@Test(priority = 0)
+	@BeforeClass
 	public void browserLaunch() {
 		launchBrowser(readProperty("browser"), readProperty("url"));
 		bankHomePage = new BankHomePage(driver);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, enabled = true)
 	public void loginTest() {
 		bankHomePage.fillUserName("Admin");
 		bankHomePage.fillPassword("Admin");
 		bankHomePage.clickLoginButton();
 		adminHomePage = PageFactory.initElements(driver, AdminHomePage.class);
 		Assert.assertTrue(adminHomePage.isUrlCotainsExpectedText());
-		
+
 	}
 
 	@Test(priority = 2)
@@ -41,11 +43,13 @@ public class TestExecution extends BrowserHelper {
 		roleCreationPage.fillRoleName("newRoleNameOne");
 		roleCreationPage.selectRoleType("E");
 		alert = roleCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("created Sucessfully"));
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods= {"roleCreationWithValidData"})
 	public void roleCreationWithDuplicateData() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
@@ -83,21 +87,21 @@ public class TestExecution extends BrowserHelper {
 
 	@Test(priority = 7)
 	public void branchCreationValidData() {
-	
+
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
 		branchCreationPage.fillBranchName("newBranchN");
 		branchCreationPage.fillBranchAddress1("Addressbranch1");
 		branchCreationPage.fillBranchZIP("56467");
-		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchCountry("INDIA");
 		branchCreationPage.selectBranchState("Andhra Pradesh");
 		branchCreationPage.selectBranchCity("Hyderabad");
 		alert = branchCreationPage.clickBranchSubmit();
 		System.out.println(alert.getText());
 		alert.accept();
-		
+
 	}
-	
+
 	@Test(priority = 8)
 	public void branchCreationDuplicateDate() {
 		branchDetailsPage = adminHomePage.clickBranches();
@@ -105,14 +109,14 @@ public class TestExecution extends BrowserHelper {
 		branchCreationPage.fillBranchName("newBranchN");
 		branchCreationPage.fillBranchAddress1("Addressbranch1");
 		branchCreationPage.fillBranchZIP("56467");
-		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchCountry("INDIA");
 		branchCreationPage.selectBranchState("Andhra Pradesh");
 		branchCreationPage.selectBranchCity("Hyderabad");
 		alert = branchCreationPage.clickBranchSubmit();
 		System.out.println(alert.getText());
 		alert.accept();
 	}
-	
+
 	@Test(priority = 9)
 	public void branchCreationBlankData() {
 		branchDetailsPage = adminHomePage.clickBranches();
@@ -121,7 +125,7 @@ public class TestExecution extends BrowserHelper {
 		System.out.println(alert.getText());
 		alert.accept();
 	}
-	
+
 	@Test(priority = 10)
 	public void branchCreationResetData() {
 		branchDetailsPage = adminHomePage.clickBranches();
@@ -129,26 +133,27 @@ public class TestExecution extends BrowserHelper {
 		branchCreationPage.fillBranchName("newBranchN");
 		branchCreationPage.fillBranchAddress1("Addressbranch1");
 		branchCreationPage.fillBranchZIP("56467");
-		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchCountry("INDIA");
 		branchCreationPage.selectBranchState("Andhra Pradesh");
 		branchCreationPage.selectBranchCity("Hyderabad");
 		branchCreationPage.clickBranchReset();
-		
+
 	}
-	
+
 	@Test(priority = 11)
 	public void breanchCreationCancel() {
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
 		branchCreationPage.clickBranchCancel();
 	}
+
 	@Test(priority = 19)
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);
 		adminHomePage.clickLogout();
 	}
 
-	@Test(priority = 20)
+	@AfterClass
 	public void close() {
 		closeBrowser();
 	}
