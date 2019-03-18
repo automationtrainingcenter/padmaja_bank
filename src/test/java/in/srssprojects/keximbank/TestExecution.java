@@ -13,6 +13,8 @@ public class TestExecution extends BrowserHelper {
 	AdminHomePage adminHomePage;
 	RoleDetailsPage roleDetailsPage;
 	RoleCreationPage roleCreationPage;
+	BranchDetailsPage branchDetailsPage;
+	BranchCreationPage branchCreationPage;
 
 	Alert alert;
 
@@ -79,6 +81,67 @@ public class TestExecution extends BrowserHelper {
 		roleCreationPage.clickCancel();
 	}
 
+	@Test(priority = 7)
+	public void branchCreationValidData() {
+	
+		branchDetailsPage = adminHomePage.clickBranches();
+		branchCreationPage = branchDetailsPage.clickNewBranchButton();
+		branchCreationPage.fillBranchName("newBranchN");
+		branchCreationPage.fillBranchAddress1("Addressbranch1");
+		branchCreationPage.fillBranchZIP("56467");
+		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchState("Andhra Pradesh");
+		branchCreationPage.selectBranchCity("Hyderabad");
+		alert = branchCreationPage.clickBranchSubmit();
+		System.out.println(alert.getText());
+		alert.accept();
+		
+	}
+	
+	@Test(priority = 8)
+	public void branchCreationDuplicateDate() {
+		branchDetailsPage = adminHomePage.clickBranches();
+		branchCreationPage = branchDetailsPage.clickNewBranchButton();
+		branchCreationPage.fillBranchName("newBranchN");
+		branchCreationPage.fillBranchAddress1("Addressbranch1");
+		branchCreationPage.fillBranchZIP("56467");
+		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchState("Andhra Pradesh");
+		branchCreationPage.selectBranchCity("Hyderabad");
+		alert = branchCreationPage.clickBranchSubmit();
+		System.out.println(alert.getText());
+		alert.accept();
+	}
+	
+	@Test(priority = 9)
+	public void branchCreationBlankData() {
+		branchDetailsPage = adminHomePage.clickBranches();
+		branchCreationPage = branchDetailsPage.clickNewBranchButton();
+		alert = branchCreationPage.clickBranchSubmit();
+		System.out.println(alert.getText());
+		alert.accept();
+	}
+	
+	@Test(priority = 10)
+	public void branchCreationResetData() {
+		branchDetailsPage = adminHomePage.clickBranches();
+		branchCreationPage = branchDetailsPage.clickNewBranchButton();
+		branchCreationPage.fillBranchName("newBranchN");
+		branchCreationPage.fillBranchAddress1("Addressbranch1");
+		branchCreationPage.fillBranchZIP("56467");
+		branchCreationPage.selectBranchCountry("India");
+		branchCreationPage.selectBranchState("Andhra Pradesh");
+		branchCreationPage.selectBranchCity("Hyderabad");
+		branchCreationPage.clickBranchReset();
+		
+	}
+	
+	@Test(priority = 11)
+	public void breanchCreationCancel() {
+		branchDetailsPage = adminHomePage.clickBranches();
+		branchCreationPage = branchDetailsPage.clickNewBranchButton();
+		branchCreationPage.clickBranchCancel();
+	}
 	@Test(priority = 19)
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);

@@ -110,16 +110,16 @@ public class BranchCreationPage {
 	
 	// Click on Cancel
 	
-	public void clickBranchCancel() {
+	public BranchDetailsPage clickBranchCancel() {
 		
 		this.branchCancel.click();
+		return PageFactory.initElements(driver, BranchDetailsPage.class);
 	}
 		
 	//Click on Reset
 	
 	public void clickBranchReset() {
-		
-		this.branchReset.click();
+				this.branchReset.click();
 	}
 		
 		
