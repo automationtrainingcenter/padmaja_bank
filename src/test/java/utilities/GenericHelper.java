@@ -10,7 +10,7 @@ public class GenericHelper {
 	public String readProperty(String key) {
 		String value = null;
 		try {
-			FileInputStream fis = new FileInputStream(getFilePath("", "confing.properties"));
+			FileInputStream fis = new FileInputStream(getFilePath("", "config.properties"));
 			Properties prop = new Properties();
 			prop.load(fis);
 			value = prop.getProperty(key);

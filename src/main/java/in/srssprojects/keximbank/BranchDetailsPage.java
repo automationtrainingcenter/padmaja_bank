@@ -10,7 +10,7 @@ public class BranchDetailsPage {
 	
 private WebDriver driver;
 	
-	//new branch 
+
 	@FindBy(how = How.ID, using="BtnNewBR")
 	private WebElement newBranch;
 	

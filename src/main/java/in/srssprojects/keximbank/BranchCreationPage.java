@@ -1,12 +1,15 @@
 package in.srssprojects.keximbank;
 
+
 import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+
 
 public class BranchCreationPage {
 
@@ -50,17 +53,17 @@ public class BranchCreationPage {
 
 	// fill branch name
 	public void fillBranchName(String branchName) {
-		this.branchName.sendKeys("hdfc");
+		this.branchName.sendKeys("BranchName");
 	}
 
 	// fill address1
 	public void fillAddress1(String adress1) {
-		this.address1.sendKeys("lingampally");
+		this.address1.sendKeys("Address1");
 	}
 
 	// fill zipcode
 	public void fillZipcode(String zipcode) {
-		this.zipcode.sendKeys("500019");
+		this.zipcode.sendKeys("Zipcode");
 	}
 
 	// select country

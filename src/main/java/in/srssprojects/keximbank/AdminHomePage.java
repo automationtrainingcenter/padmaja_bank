@@ -45,12 +45,14 @@ public class AdminHomePage {
 	}
 
 	// click on logout button
-	public void clickLogout() {
+	public BankHomePage clickLogout() {
 		this.logout.click();
+		return PageFactory.initElements(driver, BankHomePage.class);
 	}
 
 	// click on branches button
-	public BranchDetailsPage clickBranch() {
+
+	public BranchDetailsPage clickBranches() {
 		this.branches.click();
 		return PageFactory.initElements(driver, BranchDetailsPage.class);
 	}
@@ -65,6 +67,11 @@ public class AdminHomePage {
 	public EmployeeDetailsPage clickEmployee() {
 		this.employee.click();
 		return PageFactory.initElements(driver, EmployeeDetailsPage.class);
+	}
+
+	// verify admin home page is displayed
+	public boolean isUrlCotainsExpectedText() {
+		return driver.getCurrentUrl().contains("adminflow");
 	}
 
 }

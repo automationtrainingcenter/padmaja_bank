@@ -11,6 +11,8 @@ public class EmployeeDetailsPage {
 	private WebDriver driver;
 	
 	//new employee details
+
+	//new Employee button
 	@FindBy(how = How.ID, using="BtnNew")
 	private WebElement newEmployee;
 	

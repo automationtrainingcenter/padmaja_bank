@@ -9,75 +9,92 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class EmployeeCreationPage {
+
+	
 	private WebDriver driver;
 
-	// employer name
+	// Employee name
 	@FindBy(how = How.ID, using = "txtUname")
 	private WebElement empName;
-	// login password
-		@FindBy(how = How.ID, using = "txtLpwd")
-		private WebElement loginPassword;
-
-	// roleName
+	
+	// Employee login Password
+	@FindBy(how = How.ID, using = "txtLpwd")
+	private WebElement empPassword;
+	
+	// Employee Role
 	@FindBy(how = How.ID, using = "lst_Roles")
-	private WebElement roleName;
-	// branchName
-		@FindBy(how = How.ID, using = "lst_Branch")
-		private WebElement branchName;
+	private WebElement empRole;
+	
+	
+	// Employee branch
+	@FindBy(how = How.ID, using = "lst_Branch")
+	private WebElement empBranch;
 
-
-	// submit
-	@FindBy(how = How.ID, using = "btninsert")
-	private WebElement submit;
-
-	// reset
-	@FindBy(how = How.ID, using = "Btn_Reset")
-	private WebElement reset;
-
-	// cancel
-	@FindBy(how = How.ID, using = "Btn_cancel")
-	private WebElement cancel;
-
+	// Employee Submit
+	@FindBy(how = How.ID, using = "BtnSubmit")
+	private WebElement empSubmit;
+	
+	// Employee Reset
+	@FindBy(how = How.ID, using = "btnreset")
+	private WebElement empReset;
+	
+	// Employee Cancel
+	@FindBy(how = How.ID, using = "btnCancel")
+	private WebElement empCancel;
+	
+	//Constructor
 	public EmployeeCreationPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	// fill emp name
-	public void fillEmpName(String empName) {
-		this.empName.sendKeys(empName);
+	// methods to write on above properties
+	
+	// fill employee name
+	public void fillEmployeeName(String empName) {
+			this.empName.sendKeys(empName);
 	}
-	// fill login password
-		public void fillLoginPassword(String loginPassword) {
-			this.loginPassword.sendKeys(loginPassword);
-		}
-
-	// select role name
-	public void selectRoleName(String roleName) {
-		new Select(this.roleName).selectByVisibleText(roleName);
+	
+	// fill employee password
+	public void fillEmployeePassword(String empPassword) {
+		this.empPassword.sendKeys(empPassword);
 	}
-	// select branch name
-		public void selectBranchName(String branchName) {
-			new Select(this.branchName).selectByVisibleText(branchName);
-		}
-
-
-	// click submit
-	public Alert clickSubmit() {
-		this.submit.click();
+	
+	// select employee role
+	public void selectEmployeeRole(String empRole) {
+		Select role = new Select(this.empRole);
+		role.selectByVisibleText(empRole);
+	}
+	
+	// select employee Branch
+	
+	public void selectEmployeeBranch(String empBranch) {
+		
+		Select branch = new Select(this.empBranch);
+		branch.selectByVisibleText(empBranch);
+		
+	}
+	
+	// click on submit button
+	
+	public Alert clickOnSubmit() {
+		
+		this.empSubmit.click();
 		return driver.switchTo().alert();
+		
 	}
-
-	// click reset
-	public void clickReset() {
-		this.reset.click();
+	
+	// click on cancel button
+	
+	public void clickOnCancel() {
+		
+		this.empCancel.click();
+	    
 	}
-
-	// click cancel
-	public void clickCancel() {
-		this.cancel.click();
+	
+	//click on Reset button
+	public void clickOnReset() {
+		this.empReset.click();
 	}
 
 }
-
-
