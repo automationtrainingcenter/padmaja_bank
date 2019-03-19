@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-basic_suite">
-                    <span>D:\SSTS\soundhrya\automation_workspace\keximbank\dependent.xml</span>
+                    <span>D:\SSTS\soundhrya\automation_workspace\keximbank\groups.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-basic_suite">
-                    <span>0 groups</span>
+                    <span>8 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,24 +102,25 @@
                     <div class="method-list-content failed suite-basic_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="roleCreationWithValidData">roleCreationWithValidData</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="branchCreationBlankData">branchCreationBlankData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="employeeCreationBlankData">employeeCreationBlankData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="employeeCreationWithRestData">employeeCreationWithRestData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="roleCreationWithBlankData">roleCreationWithBlankData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-basic_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-basic_suite" class="hide-methods skipped suite-basic_suite"> (hide)</a> <!-- hide-methods skipped suite-basic_suite -->
-                      <a href="#" panel-name="suite-basic_suite" class="show-methods skipped suite-basic_suite"> (show)</a> <!-- show-methods skipped suite-basic_suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-basic_suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="roleCreationWithDuplicateData">roleCreationWithDuplicateData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-basic_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,12 +131,22 @@
                     <div class="method-list-content passed suite-basic_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="branchCreationResetData">branchCreationResetData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-basic_suite" title="in.srssprojects.keximbank.TestExecution" hash-for-method="roleCreationReset">roleCreationReset</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-basic_suite -->
@@ -158,41 +169,95 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="roleCreationWithValidData">
-                  </a> <!-- roleCreationWithValidData -->
-                  <span class="method-name">roleCreationWithValidData</span>
+                  <a name="branchCreationBlankData">
+                  </a> <!-- branchCreationBlankData -->
+                  <span class="method-name">branchCreationBlankData</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at in.srssprojects.keximbank.TestExecution.roleCreationWithValidData(TestExecution.java:49)
+	at in.srssprojects.keximbank.TestExecution.branchCreationBlankData(TestExecution.java:140)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="employeeCreationBlankData">
+                  </a> <!-- employeeCreationBlankData -->
+                  <span class="method-name">employeeCreationBlankData</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;btn_insert&quot;}
+  (Session info: chrome=72.0.3626.121)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;SURYAPC&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\SURYAP~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64180}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.121, webStorageEnabled: true}
+Session ID: 81786313602d414ca6177831e5b528c5
+*** Element info: {Using=id, value=btn_insert}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at in.srssprojects.keximbank.BranchCreationPage.clickSubmit(BranchCreationPage.java:86)
+	at in.srssprojects.keximbank.TestExecution.employeeCreationBlankData(TestExecution.java:203)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="employeeCreationWithRestData">
+                  </a> <!-- employeeCreationWithRestData -->
+                  <span class="method-name">employeeCreationWithRestData</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Manager
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;SURYAPC&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:141)
+	at in.srssprojects.keximbank.EmployeeCreationPage.selectEmployeeRole(EmployeeCreationPage.java:65)
+	at in.srssprojects.keximbank.TestExecution.employeeCreationWithRestData(TestExecution.java:217)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roleCreationWithBlankData">
+                  </a> <!-- roleCreationWithBlankData -->
+                  <span class="method-name">roleCreationWithBlankData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at in.srssprojects.keximbank.TestExecution.roleCreationWithBlankData(TestExecution.java:75)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-basic_suite-class-failed -->
-          <div class="suite-basic_suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">in.srssprojects.keximbank.TestExecution</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="roleCreationWithDuplicateData">
-                  </a> <!-- roleCreationWithDuplicateData -->
-                  <span class="method-name">roleCreationWithDuplicateData</span>
-                  <div class="stack-trace">java.lang.Throwable: Method TestExecution.roleCreationWithDuplicateData()[pri:3, instance:in.srssprojects.keximbank.TestExecution@59f99ea] depends on not successfully finished methods
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-basic_suite-class-skipped -->
           <div class="suite-basic_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">in.srssprojects.keximbank.TestExecution</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="branchCreationResetData">
+                  </a> <!-- branchCreationResetData -->
+                  <span class="method-name">branchCreationResetData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="loginTest">
@@ -207,12 +272,19 @@
                   <span class="method-name">logout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="roleCreationReset">
+                  </a> <!-- roleCreationReset -->
+                  <span class="method-name">roleCreationReset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-basic_suite-class-passed -->
         </div> <!-- panel basic_suite -->
         <div panel-name="test-xml-basic_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\SSTS\soundhrya\automation_workspace\keximbank\dependent.xml</span>
+            <span class="header-content">D:\SSTS\soundhrya\automation_workspace\keximbank\groups.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -220,15 +292,14 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;basic suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;basic test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;reset&quot;/&gt;
+        &lt;include name=&quot;blank&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;in.srssprojects.keximbank.TestExecution&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;loginTest&quot;/&gt;
-          &lt;include name=&quot;roleCreationWithDuplicateData&quot;/&gt;
-          &lt;include name=&quot;roleCreationWithValidData&quot;/&gt;
-          &lt;include name=&quot;logout&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- in.srssprojects.keximbank.TestExecution --&gt;
+      &lt;class name=&quot;in.srssprojects.keximbank.TestExecution&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- basic test --&gt;
 &lt;/suite&gt; &lt;!-- basic suite --&gt;
@@ -252,6 +323,142 @@
             <span class="header-content">Groups for basic suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">blank</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">branchCreationBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">employeeCreationBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roleCreationWithBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">branch</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">branchCreationBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">branchCreationResetData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">cancel</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">employee</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">employeeCreationBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">employeeCreationWithRestData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">invalid</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">reset</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">branchCreationResetData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">employeeCreationWithRestData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roleCreationReset</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">role</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roleCreationReset</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">roleCreationWithBlankData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">valid</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-basic_suite" class="panel">
@@ -268,28 +475,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logout')
+data.setCell(0, 1, 'employeeCreationWithRestData')
 data.setCell(0, 2, 'in.srssprojects.keximbank.TestExecution')
-data.setCell(0, 3, 6951);
+data.setCell(0, 3, 15482);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
+data.setCell(1, 1, 'employeeCreationBlankData')
 data.setCell(1, 2, 'in.srssprojects.keximbank.TestExecution')
-data.setCell(1, 3, 2719);
+data.setCell(1, 3, 14393);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'roleCreationWithValidData')
+data.setCell(2, 1, 'logout')
 data.setCell(2, 2, 'in.srssprojects.keximbank.TestExecution')
-data.setCell(2, 3, 2605);
+data.setCell(2, 3, 6909);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'roleCreationWithDuplicateData')
+data.setCell(3, 1, 'loginTest')
 data.setCell(3, 2, 'in.srssprojects.keximbank.TestExecution')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 5908);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'branchCreationResetData')
+data.setCell(4, 2, 'in.srssprojects.keximbank.TestExecution')
+data.setCell(4, 3, 4232);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'roleCreationWithBlankData')
+data.setCell(5, 2, 'in.srssprojects.keximbank.TestExecution')
+data.setCell(5, 3, 2335);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'roleCreationReset')
+data.setCell(6, 2, 'in.srssprojects.keximbank.TestExecution')
+data.setCell(6, 3, 2227);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'branchCreationBlankData')
+data.setCell(7, 2, 'in.srssprojects.keximbank.TestExecution')
+data.setCell(7, 3, 2163);
 window.suiteTableData['basic_suite']= { tableData: data, tableDiv: 'times-div-basic_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-basic_suite">
               </div> <!-- times-div-basic_suite -->
             </div> <!-- times-div -->
@@ -304,25 +527,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-basic_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">in.srssprojects.keximbank.TestExecution</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">branchCreationValidData</span>
-                <br/>
-                <span class="ignored-method-name">branchCreationResetData</span>
+                <span class="ignored-method-name">employeeCreationWithValidData</span>
                 <br/>
                 <span class="ignored-method-name">roleCreationCancel</span>
                 <br/>
-                <span class="ignored-method-name">roleCreationReset</span>
+                <span class="ignored-method-name">branchCreationWithValidData</span>
                 <br/>
-                <span class="ignored-method-name">roleCreationWithBlankData</span>
+                <span class="ignored-method-name">roleCreationWithValidData</span>
                 <br/>
-                <span class="ignored-method-name">breanchCreationCancel</span>
+                <span class="ignored-method-name">branchCreationCancel</span>
                 <br/>
-                <span class="ignored-method-name">branchCreationBlankData</span>
+                <span class="ignored-method-name">employeeCreationWithDuplicateData</span>
+                <br/>
+                <span class="ignored-method-name">roleCreationWithDuplicateData</span>
+                <br/>
+                <span class="ignored-method-name">employeeCreationCancel</span>
                 <br/>
                 <span class="ignored-method-name">branchCreationDuplicateDate</span>
                 <br/>
@@ -343,21 +568,47 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">8652 ms</span>
+                <span class="method-start">8465 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">roleCreationWithValidData</span>
-                <span class="method-start">11377 ms</span>
+                <span class="method-name">roleCreationWithBlankData</span>
+                <span class="method-start">14380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">roleCreationReset</span>
+                <span class="method-start">16723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">branchCreationBlankData</span>
+                <span class="method-start">18950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">branchCreationResetData</span>
+                <span class="method-start">21117 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">employeeCreationBlankData</span>
+                <span class="method-start">25353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">employeeCreationWithRestData</span>
+                <span class="method-start">39758 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">13998 ms</span>
+                <span class="method-start">55244 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">close</span>
-                <span class="method-start">20951 ms</span>
+                <span class="method-start">62153 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

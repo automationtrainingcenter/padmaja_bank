@@ -1,6 +1,7 @@
 package in.srssprojects.keximbank;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -58,8 +59,15 @@ public class RoleCreationPage {
 	}
 
 	// click cancel
-	public void clickCancel() {
+	public RoleDetailsPage clickCancel() {
 		this.cancel.click();
+		return PageFactory.initElements(driver, RoleDetailsPage.class);
+	}
+	
+	//verify  role name data is cleared or not
+	public boolean isRoleNameEmpty() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		return js.executeScript("return arguments[0].value", this.roleName).toString().isEmpty();
 	}
 
 }

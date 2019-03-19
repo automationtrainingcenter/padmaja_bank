@@ -2,12 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [basic suite]">
   <test thread-count="5" name="basic test(failed)">
+    <groups>
+      <run>
+        <include name="reset"/>
+        <include name="blank"/>
+      </run>
+    </groups>
     <classes>
       <class name="in.srssprojects.keximbank.TestExecution">
         <methods>
           <include name="close"/>
-          <include name="roleCreationWithValidData"/>
-          <include name="roleCreationWithDuplicateData"/>
+          <include name="employeeCreationBlankData"/>
+          <include name="roleCreationWithBlankData"/>
+          <include name="employeeCreationWithRestData"/>
+          <include name="branchCreationBlankData"/>
           <include name="browserLaunch"/>
         </methods>
       </class> <!-- in.srssprojects.keximbank.TestExecution -->

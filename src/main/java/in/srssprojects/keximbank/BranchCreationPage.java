@@ -2,7 +2,7 @@ package in.srssprojects.keximbank;
 
 
 import org.openqa.selenium.Alert;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,7 +63,7 @@ public class BranchCreationPage {
 
 	// fill zipcode
 	public void fillZipcode(String zipcode) {
-		this.zipcode.sendKeys("Zipcode");
+		this.zipcode.sendKeys(zipcode);
 	}
 
 	// select country
@@ -93,8 +93,15 @@ public class BranchCreationPage {
 	}
 
 	// click cancel
-	public void clickCancel() {
+	public BranchDetailsPage clickCancel() {
 		this.cancel.click();
+		return PageFactory.initElements(driver, BranchDetailsPage.class);
+	}
+	
+	//verify branch name is empty or not
+	public boolean isBranchNameEmpty() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		return js.executeScript("return arguments[0].value", this.branchName).toString().isEmpty();
 	}
 
 }

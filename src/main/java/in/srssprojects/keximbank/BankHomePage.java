@@ -41,5 +41,9 @@ public class BankHomePage {
 	public void clickLoginButton() {
 		this.login().click();
 	}
+	
+	public boolean isLoginButtonDisplayed() {
+		return this.login().isDisplayed();
+	}
 
 }

@@ -24,5 +24,10 @@ public class RoleDetailsPage {
 		return PageFactory.initElements(driver, RoleCreationPage.class);
 	}
 	
+	// verify is new role button is displayed
+	public boolean isNewRoleButtonDisplayed() {
+		return this.newRole.isDisplayed();
+	}
+	
 
 }

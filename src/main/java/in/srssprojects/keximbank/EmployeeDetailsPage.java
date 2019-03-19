@@ -27,6 +27,11 @@ public class EmployeeDetailsPage {
 		return PageFactory.initElements(driver, EmployeeCreationPage.class);
 	}
 	
+	
+	//verify is new employee button is displayed
+	public boolean isNewEmployeeButtonDisplayed() {
+		return this.newEmployee.isDisplayed();
+	}
 
 }
 

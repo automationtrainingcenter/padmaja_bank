@@ -22,13 +22,13 @@ public class TestExecution extends BrowserHelper {
 
 	Alert alert;
 
-	@BeforeClass
+	@BeforeClass(groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
 	public void browserLaunch() {
 		launchBrowser(readProperty("browser"), readProperty("url"));
 		bankHomePage = new BankHomePage(driver);
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = true, groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
 	public void loginTest() {
 		bankHomePage.fillUserName("Admin");
 		bankHomePage.fillPassword("Admin");
@@ -38,7 +38,7 @@ public class TestExecution extends BrowserHelper {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = { "role", "valid" })
 	public void roleCreationWithValidData() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
@@ -51,43 +51,49 @@ public class TestExecution extends BrowserHelper {
 		Assert.assertTrue(alertText.contains("created Sucessfully"));
 	}
 
-	@Test(priority = 3, dependsOnMethods = { "roleCreationWithValidData" })
+	@Test(priority = 3, dependsOnMethods = { "roleCreationWithValidData" }, groups = { "role", "invalid" })
 	public void roleCreationWithDuplicateData() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
 		roleCreationPage.fillRoleName("newRoleNameOne");
 		roleCreationPage.selectRoleType("E");
 		alert = roleCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("already Exist"));
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 4, groups = { "role", "blank" })
 	public void roleCreationWithBlankData() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
 		alert = roleCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("Please fill in the following"));
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 5, groups = { "role", "reset" })
 	public void roleCreationReset() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
 		roleCreationPage.fillRoleName("newRoleNameOne");
 		roleCreationPage.selectRoleType("E");
 		roleCreationPage.clickReset();
+		Assert.assertTrue(roleCreationPage.isRoleNameEmpty());
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, groups = { "role", "cancel" })
 	public void roleCreationCancel() {
 		roleDetailsPage = adminHomePage.clickRoles();
 		roleCreationPage = roleDetailsPage.clickNewRoleButton();
-		roleCreationPage.clickCancel();
+		roleDetailsPage = roleCreationPage.clickCancel();
+		Assert.assertTrue(roleDetailsPage.isNewRoleButtonDisplayed());
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 7, groups = { "branch", "valid" })
 	public void branchCreationWithValidData() {
 
 		branchDetailsPage = adminHomePage.clickBranches();
@@ -99,12 +105,14 @@ public class TestExecution extends BrowserHelper {
 		branchCreationPage.selectState("Andhra Pradesh");
 		branchCreationPage.selectCity("Hyderabad");
 		alert = branchCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("created Sucessfully"));
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 8, groups = { "branch", "invalid" })
 	public void branchCreationDuplicateDate() {
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
@@ -115,20 +123,24 @@ public class TestExecution extends BrowserHelper {
 		branchCreationPage.selectState("Andhra Pradesh");
 		branchCreationPage.selectCity("Hyderabad");
 		alert = branchCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("already Exist"));
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 9, groups = { "branch", "blank" })
 	public void branchCreationBlankData() {
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
 		alert = branchCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("Please fill in the following"));
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 10, groups = { "branch", "reset" })
 	public void branchCreationResetData() {
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
@@ -139,16 +151,20 @@ public class TestExecution extends BrowserHelper {
 		branchCreationPage.selectState("Andhra Pradesh");
 		branchCreationPage.selectCity("Hyderabad");
 		branchCreationPage.clickReset();
+		Assert.assertTrue(branchCreationPage.isBranchNameEmpty());
 
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 11, groups = { "branch", "cancel" })
 	public void branchCreationCancel() {
 		branchDetailsPage = adminHomePage.clickBranches();
 		branchCreationPage = branchDetailsPage.clickNewBranchButton();
-		branchCreationPage.clickCancel();
+		branchDetailsPage = branchCreationPage.clickCancel();
+		Assert.assertTrue(branchDetailsPage.isNewBranchButtonDisplayed());
+
 	}
-	@Test(priority = 12)
+
+	@Test(priority = 12, groups = { "employee", "valid" })
 	public void employeeCreationWithValidData() {
 
 		employeeDetailsPage = adminHomePage.clickEmployee();
@@ -158,10 +174,13 @@ public class TestExecution extends BrowserHelper {
 		employeeCreationPage.selectEmployeeRole("Manager");
 		employeeCreationPage.selectEmployeeBranch("Hyderabad");
 		alert = employeeCreationPage.clickOnSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("created Sucessfully"));
 	}
-	@Test(priority = 13)
+
+	@Test(priority = 13, groups = { "employee", "invalid" })
 	public void employeeCreationWithDuplicateData() {
 
 		employeeDetailsPage = adminHomePage.clickEmployee();
@@ -171,46 +190,55 @@ public class TestExecution extends BrowserHelper {
 		employeeCreationPage.selectEmployeeRole("Manager");
 		employeeCreationPage.selectEmployeeBranch("Hyderabad");
 		alert = employeeCreationPage.clickOnSubmit();
-		System.out.println(alert.getText());
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("already Exist"));
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 14, groups = { "employee", "blank" })
 	public void employeeCreationBlankData() {
 		employeeDetailsPage = adminHomePage.clickEmployee();
 		employeeCreationPage = employeeDetailsPage.clickNewEmployeeButton();
-		alert = branchCreationPage.clickSubmit();
-		System.out.println(alert.getText());
+		alert = employeeCreationPage.clickOnSubmit();
+		String alertText = alert.getText();
+		System.out.println(alertText);
 		alert.accept();
+		Assert.assertTrue(alertText.contains("Please fill in the following fields"));
 	}
-	@Test(priority = 15)
+
+	@Test(priority = 15, groups = { "employee", "reset" })
 	public void employeeCreationWithRestData() {
 
 		employeeDetailsPage = adminHomePage.clickEmployee();
 		employeeCreationPage = employeeDetailsPage.clickNewEmployeeButton();
 		employeeCreationPage.fillEmployeeName("sunshine");
 		employeeCreationPage.fillEmployeePassword("12345");
-		employeeCreationPage.selectEmployeeRole("Manager");
+		employeeCreationPage.selectEmployeeRole("manager");
 		employeeCreationPage.selectEmployeeBranch("Hyderabad");
 		employeeCreationPage.clickOnReset();
-		
+		Assert.assertTrue(employeeCreationPage.isEmployeeNameEmpty());
+
 	}
-	@Test(priority = 16)
+
+	@Test(priority = 16, groups = { "employee", "cancel" })
 	public void employeeCreationCancel() {
 		employeeDetailsPage = adminHomePage.clickEmployee();
 		employeeCreationPage = employeeDetailsPage.clickNewEmployeeButton();
-		branchCreationPage.clickCancel();
+		employeeDetailsPage = employeeCreationPage.clickOnCancel();
+		Assert.assertTrue(employeeDetailsPage.isNewEmployeeButtonDisplayed());
+
 	}
 
-
-
-	@Test(priority = 19)
+	@Test(priority = 19, groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);
-		adminHomePage.clickLogout();
+		bankHomePage = adminHomePage.clickLogout();
+		Assert.assertTrue(bankHomePage.isLoginButtonDisplayed());
+
 	}
 
-	@AfterClass
+	@AfterClass(groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
 	public void close() {
 		closeBrowser();
 	}
