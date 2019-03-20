@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [parameter suite]">
+  <parameter name="url" value="http://srssprojects.in"/>
+  <test thread-count="5" name="parameter test(failed)">
+    <parameter name="brName" value="chrome"/>
+    <groups>
+      <run>
+        <include name="reset"/>
+        <include name="blank"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="in.srssprojects.keximbank.TestExecution">
+        <methods>
+          <include name="close"/>
+          <include name="employeeCreationWithRestData"/>
+          <include name="browserLaunch"/>
+        </methods>
+      </class> <!-- in.srssprojects.keximbank.TestExecution -->
+    </classes>
+  </test> <!-- parameter test(failed) -->
+</suite> <!-- Failed suite [parameter suite] -->

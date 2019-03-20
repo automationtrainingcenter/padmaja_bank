@@ -9,16 +9,20 @@
       </run>
     </groups>
     <classes>
-      <class name="in.srssprojects.keximbank.TestExecution">
+      <class name="in.srssprojects.keximbank.BasicExecution">
         <methods>
+          <include name="branchCreationResetData"/>
+          <include name="loginTest"/>
           <include name="close"/>
           <include name="employeeCreationBlankData"/>
+          <include name="roleCreationReset"/>
           <include name="roleCreationWithBlankData"/>
+          <include name="browserLaunch"/>
           <include name="employeeCreationWithRestData"/>
           <include name="branchCreationBlankData"/>
-          <include name="browserLaunch"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- in.srssprojects.keximbank.TestExecution -->
+      </class> <!-- in.srssprojects.keximbank.BasicExecution -->
     </classes>
   </test> <!-- basic test(failed) -->
 </suite> <!-- Failed suite [basic suite] -->

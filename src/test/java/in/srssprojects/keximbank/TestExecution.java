@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import utilities.BrowserHelper;
@@ -22,11 +23,7 @@ public class TestExecution extends BrowserHelper {
 
 	Alert alert;
 
-	@BeforeClass(groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
-	public void browserLaunch() {
-		launchBrowser(readProperty("browser"), readProperty("url"));
-		bankHomePage = new BankHomePage(driver);
-	}
+	
 
 	@Test(priority = 1, enabled = true, groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
 	public void loginTest() {
@@ -215,7 +212,7 @@ public class TestExecution extends BrowserHelper {
 		employeeCreationPage.fillEmployeeName("sunshine");
 		employeeCreationPage.fillEmployeePassword("12345");
 		employeeCreationPage.selectEmployeeRole("manager");
-		employeeCreationPage.selectEmployeeBranch("Hyderabad");
+		employeeCreationPage.selectEmployeeBranch("change");
 		employeeCreationPage.clickOnReset();
 		Assert.assertTrue(employeeCreationPage.isEmployeeNameEmpty());
 
