@@ -1,161 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="24" total="34" passed="10">
+<testng-results skipped="0" failed="0" ignored="16" total="18" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Grid suite" duration-ms="45337" started-at="2019-03-25T06:48:14Z" finished-at="2019-03-25T06:48:59Z">
+  <suite name="basic suite" duration-ms="21471" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:35:04Z">
     <groups>
-      <group name="cancel">
-        <method signature="TestExecution.branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-      </group> <!-- cancel -->
       <group name="valid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- valid -->
+      <group name="cancel">
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+      </group> <!-- cancel -->
+      <group name="datadriven">
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" class="in.srssprojects.keximbank.TestExecution"/>
+      </group> <!-- datadriven -->
       <group name="role">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="roleCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- role -->
       <group name="invalid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- invalid -->
       <group name="reset">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- reset -->
       <group name="employee">
-        <method signature="TestExecution.employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="employeeCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- employee -->
       <group name="branch">
-        <method signature="TestExecution.branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="branchCreationCancel" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- branch -->
     </groups>
-    <test name="node1 test" duration-ms="23767" started-at="2019-03-25T06:48:14Z" finished-at="2019-03-25T06:48:37Z">
-      <class name="in.srssprojects.keximbank.GridExecution">
-        <test-method status="PASS" signature="browserLaunch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="browserLaunch" is-config="true" duration-ms="6886" started-at="2019-03-25T06:48:14Z" finished-at="2019-03-25T06:48:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://srssprojects.in]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://192.168.1.21:35114/wd/hub]]>
-              </value>
-            </param>
-          </params>
+    <test name="basic test" duration-ms="21471" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:35:04Z">
+      <class name="in.srssprojects.keximbank.BasicExecution">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="browserLaunch" is-config="true" duration-ms="7739" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:34:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="loginTest" duration-ms="2446" started-at="2019-03-25T06:48:20Z" finished-at="2019-03-25T06:48:23Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" duration-ms="2622" started-at="2019-03-26T06:34:51Z" finished-at="2019-03-26T06:34:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="roleCreationCancel" duration-ms="2030" started-at="2019-03-25T06:48:23Z" finished-at="2019-03-25T06:48:25Z">
+        <test-method status="PASS" signature="roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" duration-ms="10925" started-at="2019-03-26T06:34:53Z" finished-at="2019-03-26T06:35:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- roleCreationCancel -->
-        <test-method status="PASS" signature="branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="branchCreationCancel" duration-ms="2172" started-at="2019-03-25T06:48:25Z" finished-at="2019-03-25T06:48:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- branchCreationCancel -->
-        <test-method status="PASS" signature="employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="employeeCreationCancel" duration-ms="4390" started-at="2019-03-25T06:48:27Z" finished-at="2019-03-25T06:48:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- employeeCreationCancel -->
-        <test-method status="PASS" signature="logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="logout" duration-ms="5667" started-at="2019-03-25T06:48:32Z" finished-at="2019-03-25T06:48:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.GridExecution@3bfdc050]" name="close" is-config="true" duration-ms="125" started-at="2019-03-25T06:48:37Z" finished-at="2019-03-25T06:48:37Z">
+        </test-method> <!-- roleCreationWithMultipleData -->
+        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="close" is-config="true" duration-ms="132" started-at="2019-03-26T06:35:04Z" finished-at="2019-03-26T06:35:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- in.srssprojects.keximbank.GridExecution -->
-    </test> <!-- node1 test -->
-    <test name="node2 test" duration-ms="45337" started-at="2019-03-25T06:48:14Z" finished-at="2019-03-25T06:48:59Z">
-      <class name="in.srssprojects.keximbank.GridExecution">
-        <test-method status="PASS" signature="browserLaunch(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="browserLaunch" is-config="true" duration-ms="19577" started-at="2019-03-25T06:48:14Z" finished-at="2019-03-25T06:48:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://srssprojects.in]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://192.168.1.13:23535/wd/hub]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="loginTest" duration-ms="3891" started-at="2019-03-25T06:48:33Z" finished-at="2019-03-25T06:48:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="roleCreationCancel()[pri:6, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="roleCreationCancel" duration-ms="2894" started-at="2019-03-25T06:48:37Z" finished-at="2019-03-25T06:48:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- roleCreationCancel -->
-        <test-method status="PASS" signature="branchCreationCancel()[pri:11, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="branchCreationCancel" duration-ms="3660" started-at="2019-03-25T06:48:40Z" finished-at="2019-03-25T06:48:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- branchCreationCancel -->
-        <test-method status="PASS" signature="employeeCreationCancel()[pri:16, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="employeeCreationCancel" duration-ms="5615" started-at="2019-03-25T06:48:44Z" finished-at="2019-03-25T06:48:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- employeeCreationCancel -->
-        <test-method status="PASS" signature="logout()[pri:19, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="logout" duration-ms="5879" started-at="2019-03-25T06:48:49Z" finished-at="2019-03-25T06:48:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.GridExecution@5f341870]" name="close" is-config="true" duration-ms="3780" started-at="2019-03-25T06:48:55Z" finished-at="2019-03-25T06:48:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- in.srssprojects.keximbank.GridExecution -->
-    </test> <!-- node2 test -->
-  </suite> <!-- Grid suite -->
+      </class> <!-- in.srssprojects.keximbank.BasicExecution -->
+    </test> <!-- basic test -->
+  </suite> <!-- basic suite -->
 </testng-results>

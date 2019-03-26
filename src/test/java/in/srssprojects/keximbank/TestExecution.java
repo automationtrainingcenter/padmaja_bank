@@ -9,6 +9,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import utilities.BrowserHelper;
+import utilities.ExcelHelper;
 
 public class TestExecution extends BrowserHelper {
 
@@ -20,12 +21,12 @@ public class TestExecution extends BrowserHelper {
 	BranchCreationPage branchCreationPage;
 	EmployeeDetailsPage employeeDetailsPage;
 	EmployeeCreationPage employeeCreationPage;
+	ExcelHelper excel = new ExcelHelper();
 
 	Alert alert;
 
-	
-
-	@Test(priority = 1, enabled = true, groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
+	@Test(priority = 1, enabled = true, groups = {"datadriven", "branch", "valid", "employee", "invalid", "role", "reset",
+			"cancel" })
 	public void loginTest() {
 		bankHomePage.fillUserName("Admin");
 		bankHomePage.fillPassword("Admin");
@@ -227,7 +228,7 @@ public class TestExecution extends BrowserHelper {
 
 	}
 
-	@Test(priority = 19, groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
+	@Test(priority = 19, groups = { "branch", "valid", "employee", "invalid", "role", "reset", "cancel" })
 	public void logout() throws InterruptedException {
 		Thread.sleep(5000);
 		bankHomePage = adminHomePage.clickLogout();
@@ -235,7 +236,27 @@ public class TestExecution extends BrowserHelper {
 
 	}
 
-	@AfterClass(groups = {"branch", "valid", "employee", "invalid", "role", "reset", "cancel"})
+	@Test(priority = 20, groups = { "role", "datadriven" })
+	public void roleCreationWithMultipleData() {
+		excel.setExcel(".", "testdata.xls", "roleData");
+		int nor = excel.rowCount();
+		int noc = excel.columnCount();
+		for (int i = 1; i <= nor; i++) {
+			String roleName = excel.readData(i, 0);
+			String roleType = excel.readData(i, 2);
+			roleDetailsPage = adminHomePage.clickRoles();
+			roleCreationPage = roleDetailsPage.clickNewRoleButton();
+			roleCreationPage.fillRoleName(roleName);
+			roleCreationPage.selectRoleType(roleType);
+			alert = roleCreationPage.clickSubmit();
+			String alertText = alert.getText();
+			System.out.println(alertText);
+			alert.accept();
+			Assert.assertTrue(alertText.contains("Created Sucessfully"));
+		}
+	}
+
+	@AfterClass(groups = { "branch", "datadriven","valid", "employee", "invalid", "role", "reset", "cancel" })
 	public void close() {
 		closeBrowser();
 	}
