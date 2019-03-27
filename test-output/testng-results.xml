@@ -1,51 +1,433 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="16" total="18" passed="2">
+<testng-results skipped="0" failed="6" ignored="17" total="24" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="basic suite" duration-ms="21471" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:35:04Z">
+  <suite name="basic suite" duration-ms="50679" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:54Z">
     <groups>
       <group name="valid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- valid -->
       <group name="cancel">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- cancel -->
       <group name="datadriven">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- datadriven -->
       <group name="role">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- role -->
       <group name="invalid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- invalid -->
       <group name="reset">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- reset -->
       <group name="employee">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- employee -->
       <group name="branch">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- branch -->
     </groups>
-    <test name="basic test" duration-ms="21471" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:35:04Z">
+    <test name="basic test" duration-ms="50679" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:54Z">
       <class name="in.srssprojects.keximbank.BasicExecution">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="browserLaunch" is-config="true" duration-ms="7739" started-at="2019-03-26T06:34:43Z" finished-at="2019-03-26T06:34:51Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="browserLaunch" is-config="true" duration-ms="12179" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="loginTest" duration-ms="2622" started-at="2019-03-26T06:34:51Z" finished-at="2019-03-26T06:34:53Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" duration-ms="3311" started-at="2019-03-27T06:18:16Z" finished-at="2019-03-27T06:18:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="roleCreationWithMultipleData()[pri:20, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="roleCreationWithMultipleData" duration-ms="10925" started-at="2019-03-26T06:34:53Z" finished-at="2019-03-26T06:35:04Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="7968" started-at="2019-03-27T06:18:20Z" data-provider="empData" finished-at="2019-03-27T06:18:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajeshTwo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashierOne]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- roleCreationWithMultipleData -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@343f4d3d]" name="close" is-config="true" duration-ms="132" started-at="2019-03-26T06:35:04Z" finished-at="2019-03-26T06:35:04Z">
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="8488" started-at="2019-03-27T06:18:28Z" data-provider="empData" finished-at="2019-03-27T06:18:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sarathOne]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashierTwo]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4368" started-at="2019-03-27T06:18:36Z" data-provider="empData" finished-at="2019-03-27T06:18:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ahalayaFour]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashierThree]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="5948" started-at="2019-03-27T06:18:41Z" data-provider="empData" finished-at="2019-03-27T06:18:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[suryaThree]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashierFour]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4790" started-at="2019-03-27T06:18:46Z" data-provider="empData" finished-at="2019-03-27T06:18:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tejaEmp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cashierFive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="2777" started-at="2019-03-27T06:18:51Z" data-provider="empData" finished-at="2019-03-27T06:18:54Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at in.srssprojects.keximbank.EmployeeCreationPage.fillEmployeeName(EmployeeCreationPage.java:54)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:264)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
+        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="close" is-config="true" duration-ms="345" started-at="2019-03-27T06:18:54Z" finished-at="2019-03-27T06:18:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

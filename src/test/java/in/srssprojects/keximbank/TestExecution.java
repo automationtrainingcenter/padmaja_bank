@@ -5,6 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -236,7 +237,7 @@ public class TestExecution extends BrowserHelper {
 
 	}
 
-	@Test(priority = 20, groups = { "role", "datadriven" })
+	@Test(priority = 20, groups = { "role", "datadriven1" })
 	public void roleCreationWithMultipleData() {
 		excel.setExcel(".", "testdata.xls", "roleData");
 		int nor = excel.rowCount();
@@ -254,6 +255,21 @@ public class TestExecution extends BrowserHelper {
 			alert.accept();
 			Assert.assertTrue(alertText.contains("Created Sucessfully"));
 		}
+	}
+	
+	@Test(priority = 21, groups= {"employee", "datadriven"}, dataProvider = "empData", dataProviderClass = TestData.class)
+	public void employeeCreationWithMultipleDataUsingDP(String empName, String password, String role, String branch) {
+		employeeDetailsPage = adminHomePage.clickEmployee();
+		employeeCreationPage = employeeDetailsPage.clickNewEmployeeButton();
+		employeeCreationPage.fillEmployeeName(empName);
+		employeeCreationPage.fillEmployeePassword(password);
+		employeeCreationPage.selectEmployeeRole(role);
+		employeeCreationPage.selectEmployeeBranch(branch);
+		alert = employeeCreationPage.clickOnSubmit();
+		String alertText = alert.getText();
+		System.out.println(alertText);
+		alert.accept();
+		Assert.assertTrue(alertText.contains("Sucessfully"));
 	}
 
 	@AfterClass(groups = { "branch", "datadriven","valid", "employee", "invalid", "role", "reset", "cancel" })

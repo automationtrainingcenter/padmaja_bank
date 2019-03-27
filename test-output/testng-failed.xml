@@ -4,23 +4,15 @@
   <test thread-count="5" name="basic test(failed)">
     <groups>
       <run>
-        <include name="reset"/>
-        <include name="blank"/>
+        <include name="datadriven"/>
       </run>
     </groups>
     <classes>
       <class name="in.srssprojects.keximbank.BasicExecution">
         <methods>
-          <include name="branchCreationResetData"/>
-          <include name="loginTest"/>
           <include name="close"/>
-          <include name="employeeCreationBlankData"/>
-          <include name="roleCreationReset"/>
-          <include name="roleCreationWithBlankData"/>
+          <include name="employeeCreationWithMultipleDataUsingDP" invocation-numbers="0 1 2 3 4 5"/>
           <include name="browserLaunch"/>
-          <include name="employeeCreationWithRestData"/>
-          <include name="branchCreationBlankData"/>
-          <include name="logout"/>
         </methods>
       </class> <!-- in.srssprojects.keximbank.BasicExecution -->
     </classes>

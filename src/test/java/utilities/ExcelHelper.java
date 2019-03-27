@@ -60,6 +60,20 @@ public class ExcelHelper extends GenericHelper {
 		return data;
 	}
 
+	// read complete data from the table
+	public String[][] getSheetData(String folderName, String fileName, String sheetName) {
+		setExcel(folderName, fileName, sheetName);
+		int nor = rowCount();
+		int noc = columnCount();
+		String[][] data = new String[nor][noc];
+		for (int i = 1; i < nor; i++) {
+			for (int j = 0; j < noc; j++) {
+				data[i-1][j] = readData(i, j); 
+			}
+		}
+		return data;
+	}
+
 	public static void main(String[] args) {
 		ExcelHelper excel = new ExcelHelper();
 		excel.setExcel(".", "testdata.xls", "roleData");
@@ -68,9 +82,9 @@ public class ExcelHelper extends GenericHelper {
 
 		System.out.println("rows = " + nor + "cells =" + noc);
 		for (int i = 1; i <= nor; i++) {
-			System.out.print(excel.readData(i, 0)+"\t");
-			System.out.print(excel.readData(i, 1)+"\t");
-			System.out.print(excel.readData(i, 2)+"\n");
+			System.out.print(excel.readData(i, 0) + "\t");
+			System.out.print(excel.readData(i, 1) + "\t");
+			System.out.print(excel.readData(i, 2) + "\n");
 		}
 	}
 
