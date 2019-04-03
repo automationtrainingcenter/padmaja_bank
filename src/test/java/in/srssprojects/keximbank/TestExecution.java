@@ -6,12 +6,19 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 import utilities.BrowserHelper;
 import utilities.ExcelHelper;
+import utilities.TestNgListener;
 
+
+@Listeners(TestNgListener.class)
 public class TestExecution extends BrowserHelper {
 
 	BankHomePage bankHomePage;
@@ -23,7 +30,7 @@ public class TestExecution extends BrowserHelper {
 	EmployeeDetailsPage employeeDetailsPage;
 	EmployeeCreationPage employeeCreationPage;
 	ExcelHelper excel = new ExcelHelper();
-
+	
 	Alert alert;
 
 	@Test(priority = 1, enabled = true, groups = {"datadriven", "branch", "valid", "employee", "invalid", "role", "reset",
@@ -71,7 +78,7 @@ public class TestExecution extends BrowserHelper {
 		String alertText = alert.getText();
 		System.out.println(alertText);
 		alert.accept();
-		Assert.assertTrue(alertText.contains("Please fill in the following"));
+		Assert.assertTrue(alertText.contains("Please fill in the following123"));
 	}
 
 	@Test(priority = 5, groups = { "role", "reset" })

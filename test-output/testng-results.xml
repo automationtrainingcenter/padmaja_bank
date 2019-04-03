@@ -1,47 +1,782 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="6" ignored="17" total="24" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtuId]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtuId]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtPword]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtPword]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: login]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: login]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierOne"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierOne"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[alert came Employer Already Existed...Try again]]>
+    </line>
+    <line>
+      <![CDATA[alert accepted]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierTwo"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierTwo"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[alert came Employer Already Existed...Try again]]>
+    </line>
+    <line>
+      <![CDATA[alert accepted]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierThree"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierThree"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[alert came Employer Already Existed...Try again]]>
+    </line>
+    <line>
+      <![CDATA[alert accepted]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierFour"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierFour"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[alert came Employer Already Existed...Try again]]>
+    </line>
+    <line>
+      <![CDATA[alert accepted]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[element value changed]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierFive"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierFive"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[alert came Employer Already Existed...Try again]]>
+    </line>
+    <line>
+      <![CDATA[alert accepted]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: BtnNew]]>
+    </line>
+    <line>
+      <![CDATA[clicking on element]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
+    <line>
+      <![CDATA[locating an elemnt using By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[elemented located successfully with By.id: txtUname]]>
+    </line>
+    <line>
+      <![CDATA[clicked on element]]>
+    </line>
   </reporter-output>
-  <suite name="basic suite" duration-ms="50679" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:54Z">
+  <suite name="basic suite" duration-ms="45184" started-at="2019-03-28T05:40:41Z" finished-at="2019-03-28T05:41:26Z">
     <groups>
       <group name="valid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- valid -->
       <group name="cancel">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- cancel -->
       <group name="datadriven">
-        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- datadriven -->
       <group name="role">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- role -->
       <group name="invalid">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- invalid -->
       <group name="reset">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- reset -->
       <group name="employee">
-        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- employee -->
       <group name="branch">
-        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
+        <method signature="TestExecution.loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" class="in.srssprojects.keximbank.TestExecution"/>
       </group> <!-- branch -->
     </groups>
-    <test name="basic test" duration-ms="50679" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:54Z">
+    <test name="basic test" duration-ms="45184" started-at="2019-03-28T05:40:41Z" finished-at="2019-03-28T05:41:26Z">
       <class name="in.srssprojects.keximbank.BasicExecution">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="browserLaunch" is-config="true" duration-ms="12179" started-at="2019-03-27T06:18:04Z" finished-at="2019-03-27T06:18:16Z">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="browserLaunch" is-config="true" duration-ms="7905" started-at="2019-03-28T05:40:41Z" finished-at="2019-03-28T05:40:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="loginTest" duration-ms="3311" started-at="2019-03-27T06:18:16Z" finished-at="2019-03-27T06:18:19Z">
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="loginTest" duration-ms="3149" started-at="2019-03-28T05:40:49Z" finished-at="2019-03-28T05:40:52Z">
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtuId]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtuId]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtPword]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtPword]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: login]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: login]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="7968" started-at="2019-03-27T06:18:20Z" data-provider="empData" finished-at="2019-03-27T06:18:28Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="7261" started-at="2019-03-28T05:40:53Z" data-provider="empData" finished-at="2019-03-28T05:41:00Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +809,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -104,9 +839,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierOne"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierOne"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[alert came Employer Already Existed...Try again]]>
+            </line>
+            <line>
+              <![CDATA[alert accepted]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="8488" started-at="2019-03-27T06:18:28Z" data-provider="empData" finished-at="2019-03-27T06:18:36Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4595" started-at="2019-03-28T05:41:00Z" data-provider="empData" finished-at="2019-03-28T05:41:05Z">
           <params>
             <param index="0">
               <value>
@@ -139,7 +1000,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,9 +1030,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierTwo"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierTwo"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[alert came Employer Already Existed...Try again]]>
+            </line>
+            <line>
+              <![CDATA[alert accepted]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4368" started-at="2019-03-27T06:18:36Z" data-provider="empData" finished-at="2019-03-27T06:18:41Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4061" started-at="2019-03-28T05:41:05Z" data-provider="empData" finished-at="2019-03-28T05:41:10Z">
           <params>
             <param index="0">
               <value>
@@ -204,7 +1191,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -234,9 +1221,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierThree"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierThree"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[alert came Employer Already Existed...Try again]]>
+            </line>
+            <line>
+              <![CDATA[alert accepted]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="5948" started-at="2019-03-27T06:18:41Z" data-provider="empData" finished-at="2019-03-27T06:18:46Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4380" started-at="2019-03-28T05:41:10Z" data-provider="empData" finished-at="2019-03-28T05:41:14Z">
           <params>
             <param index="0">
               <value>
@@ -269,7 +1382,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -299,9 +1412,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierFour"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierFour"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[alert came Employer Already Existed...Try again]]>
+            </line>
+            <line>
+              <![CDATA[alert accepted]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="4790" started-at="2019-03-27T06:18:46Z" data-provider="empData" finished-at="2019-03-27T06:18:51Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="7912" started-at="2019-03-28T05:41:15Z" data-provider="empData" finished-at="2019-03-28T05:41:23Z">
           <params>
             <param index="0">
               <value>
@@ -334,7 +1573,7 @@ at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
 at org.testng.Assert.assertTrue(Assert.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:272)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -364,9 +1603,135 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtLpwd]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[element value changed]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Roles]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "cashierFive"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "cashierFive"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: lst_Branch]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: .//option[normalize-space(.) = "Bangalore"]]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnSubmit]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[alert came Employer Already Existed...Try again]]>
+            </line>
+            <line>
+              <![CDATA[alert accepted]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="2777" started-at="2019-03-27T06:18:51Z" data-provider="empData" finished-at="2019-03-27T06:18:54Z">
+        <test-method status="FAIL" signature="employeeCreationWithMultipleDataUsingDP(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:21, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="employeeCreationWithMultipleDataUsingDP" duration-ms="2502" started-at="2019-03-28T05:41:23Z" data-provider="empData" finished-at="2019-03-28T05:41:25Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -388,14 +1753,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
 at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:429)
+at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
 at in.srssprojects.keximbank.EmployeeCreationPage.fillEmployeeName(EmployeeCreationPage.java:54)
-at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:264)
+at in.srssprojects.keximbank.TestExecution.employeeCreationWithMultipleDataUsingDP(TestExecution.java:271)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -425,9 +1795,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
+            <line>
+              <![CDATA[locating an elemnt using By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.xpath: //a[@href='Admin_Emp_details.aspx']]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: BtnNew]]>
+            </line>
+            <line>
+              <![CDATA[clicking on element]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
+            <line>
+              <![CDATA[locating an elemnt using By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[elemented located successfully with By.id: txtUname]]>
+            </line>
+            <line>
+              <![CDATA[clicked on element]]>
+            </line>
           </reporter-output>
         </test-method> <!-- employeeCreationWithMultipleDataUsingDP -->
-        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@53b32d7]" name="close" is-config="true" duration-ms="345" started-at="2019-03-27T06:18:54Z" finished-at="2019-03-27T06:18:54Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:in.srssprojects.keximbank.BasicExecution@4dfa3a9d]" name="close" is-config="true" duration-ms="149" started-at="2019-03-28T05:41:26Z" finished-at="2019-03-28T05:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

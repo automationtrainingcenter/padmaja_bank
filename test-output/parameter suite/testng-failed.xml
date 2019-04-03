@@ -11,13 +11,13 @@
       </run>
     </groups>
     <classes>
-      <class name="in.srssprojects.keximbank.TestExecution">
+      <class name="in.srssprojects.keximbank.ParameterExecution">
         <methods>
           <include name="close"/>
-          <include name="employeeCreationWithRestData"/>
+          <include name="roleCreationWithBlankData"/>
           <include name="browserLaunch"/>
         </methods>
-      </class> <!-- in.srssprojects.keximbank.TestExecution -->
+      </class> <!-- in.srssprojects.keximbank.ParameterExecution -->
     </classes>
   </test> <!-- parameter test(failed) -->
 </suite> <!-- Failed suite [parameter suite] -->

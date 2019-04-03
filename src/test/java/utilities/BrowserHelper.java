@@ -10,10 +10,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 public class BrowserHelper extends GenericHelper {
 
 	protected WebDriver driver;
+	protected ExtentReports report;
+	static protected ExtentTest test;
+	static protected EventFiringWebDriver edriver;
+
+	public WebDriver getDriver() {
+		return this.driver;
+	}
 
 	public void launchBrowser(String browserName, String url) {
 		if (browserName.equalsIgnoreCase("chrome")) {
@@ -23,6 +34,11 @@ public class BrowserHelper extends GenericHelper {
 			System.setProperty("webdriver.gecko.driver", getFilePath("drivers", "geckodriver.exe"));
 			driver = new FirefoxDriver();
 		}
+
+		edriver = new EventFiringWebDriver(driver);
+		EventListener listener = new EventListener();
+		edriver.register(listener);
+		driver = edriver;
 		driver.get(url);
 //		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
