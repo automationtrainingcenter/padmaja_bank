@@ -78,7 +78,7 @@ public class TestExecution extends BrowserHelper {
 		String alertText = alert.getText();
 		System.out.println(alertText);
 		alert.accept();
-		Assert.assertTrue(alertText.contains("Please fill in the following123"));
+		Assert.assertTrue(alertText.contains("Please fill in the following"));
 	}
 
 	@Test(priority = 5, groups = { "role", "reset" })
